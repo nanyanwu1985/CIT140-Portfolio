@@ -1,0 +1,129 @@
+{
+  "format": "command-nexus-weekly-report",
+  "schemaVersion": 1,
+  "courseId": "CIT140",
+  "week": 2,
+  "assignmentId": "CIT140-W02-BUSINESS-CASE",
+  "artifactType": "business-case-recommendation",
+  "caseId": "meridian-forge",
+  "reportId": "0e1622b3-c838-4b2e-9813-96c7e280ddb1",
+  "revision": 554,
+  "createdAt": "2026-09-22T20:53:14.029Z",
+  "exportedAt": "2026-09-28T00:45:06.235Z",
+  "learnerLabel": "CIT140-W02-Business-Case-Recommendation",
+  "contentStatus": "complete-fields",
+  "sections": [
+    {
+      "id": "project",
+      "title": "Proposed project",
+      "value": "QA Control Review for the affected QA cell:It checks who owns command permissions, how retired tests are controlled, and how to save evidence."
+    },
+    {
+      "id": "need",
+      "title": "Business need",
+      "value": "1.Staff currently spend an average of 10 minutes per request locating and cross-checking relevant records, totaling 60 minutes across six requests.\n2.Only two out of six retrieved record sets included both an identified custodian and a clear link to the original source, while four required follow-up.\n3.The organization needs to establish who owns command authorization, how retired tests remain controlled, and how evidence is preserved for future decisions."
+    },
+    {
+      "id": "value",
+      "title": "Expected value and beneficiaries",
+      "value": "1.QA and Engineering: They benefit by receiving a traceable record that they can use to investigate further.\n2.Operations: They benefit by gaining a defensible basis for requesting later work.\n3.Expected Value: The review establishes who owns command authorization, controls retired tests, and preserves evidence for future decisions."
+    },
+    {
+      "id": "scopeIn",
+      "title": "Included work",
+      "value": "1.Included Work: Review command-authorization ownership for the affected cell, inventory the controls used to schedule and retire its tests, document an evidence-preservation checklist, and identify gaps to hand off a report for later decisions.\n2.Included Deliverables: One command-ownership record, one scheduling/retirement control inventory, and one evidence-preservation checklist.\nSource Citation: W02-S03"
+    },
+    {
+      "id": "scopeOut",
+      "title": "Excluded work",
+      "value": "1.Restarting or operating MR-17.\n2.Changing software or schedules.\n3.Deleting or modifying original records.\n4.Buying a replacement robot or selecting a vendor.\n5.Extending the review to other cells.  "
+    },
+    {
+      "id": "technical",
+      "title": "Technical feasibility",
+      "value": "The required review can use read only record exports and the existing documentation tools.\nAcess Condtion: Access to the necessary exports has been requested but has not yet been confirmed. If access is denied, the team must revise the work or defer it."
+    },
+    {
+      "id": "operational",
+      "title": "Operational feasibility",
+      "value": "Regular duties remain in place while undertaking the provisional staffing hours.These provisional staffing hours and availability require confirmation after authorization.   \nStaff can use the review outputs because Nia and Elias review the source references, unknowns, and preservation steps, while Mara records their feedback for the sponsor. The sponsor must also address the uncertainties regarding staffing and access before final commitment. "
+    },
+    {
+      "id": "resources",
+      "title": "Cost and resource feasibility",
+      "value": "Base Estimate Comparison: The base estimate of $2,820 is $180 below the sponsor's $3,000 envelope.The planning range of $2,350 to $3,525 spans both below and above the $3,000 envelope.\nNo equipment purchase, software license, or overtime allowance is included in these estimates.   \nSource Citation: W02-S05"
+    },
+    {
+      "id": "schedule",
+      "title": "Schedule feasibility",
+      "value": "The proposed review has an elapsed duration of eight business days, which provides two business days of headroom against the sponsor's ten-business-day limit, assuming all access and staffing assumptions hold. The total workload of 48 staff hours is distinct from elapsed time because staff effort hours and elapsed business days measure different things. Furthermore, this eight-day timeline relies on critical dependencies, specifically that the required read-only record exports arrive by day three and that the review tasks can successfully overlap across the team"
+    },
+    {
+      "id": "constraints",
+      "title": "Known constraints",
+      "value": "The base estimate is $2,820, which sits near the sponsor's $3,000 internal staff time envelope.The proposed elapsed duration is eight business days against a ten-day limit, representing a total effort of 48 staff hours.\n\nAccess to necessary read-only record exports has been requested but not yet confirmed.All learner work stays outside the safety glass, preserving original records while using read-only copies without granting permission to operate equipment.\n\nPotential future occurrences such as shift reassignments removing the QA window, late exports delaying engineering, or denied access requiring the team to revise or defer the work are treated as risks rather than established delays."
+    },
+    {
+      "id": "risks",
+      "title": "Risks and assumptions",
+      "value": "An Assumption that needs checking would be whether the requested read-only record exports will arrive by day three.If the exports arrive late, it could delay Engineering, push the eight-day timeline past the ten-day limit, or require the team to revise or defer the work.The sponsor must address this uncertainty regarding access and staffing before final commitment.  "
+    },
+    {
+      "id": "success",
+      "title": "Success measures and evidence",
+      "value": "The sponsor verifies delivery by reviewing the final documentation deliverables specifically the command ownership record, the control inventory, and the evidence preservation checklist against the agreed scope and the eight day schedule timeline. Later value is evaluated by confirming whether Operations successfully uses the completed review as a defensible basis for future requests, and whether QA and Engineering effectively utilize the traceable record for their investigations.\n\nThis assessment builds upon the measured six request baseline, where historical records show an average of 10 minutes per request, with only two out of six retrieved record sets including both an identified custodian and a clear source link. Future performance targets remain separate from this recorded baseline, treating subsequent improvements as objectives rather than guaranteed outcomes."
+    },
+    {
+      "id": "recommendation",
+      "title": "Recommendation",
+      "value": "proceed"
+    },
+    {
+      "id": "rationale",
+      "title": "Rationale and conditions",
+      "value": "I chose to Proceed because the whole review stays within clear, safe boundaries and keeps an 8-business-day timeline that doesn't blow past the 10-day limit.\nSource Citations: W02-S03, W02-S05\nThe plan relies on the condition that read-only exports arrive by day three and that provisional staffing hours (48 hours total) can be managed alongside normal duties without incurring overtime or equipment costs. The primary tradeoff is accepting a provisional workload allocation against regular operations to stay within the $2,820 base budget.\nThe budget comparison showing the $2,820 base estimate fits within the $3,000 envelope (W02-S05), combined with clear scope exclusions that eliminate unauthorized robot operations or hardware purchases (W02-S03), most strongly supported this judgment."
+    },
+    {
+      "id": "nextStep",
+      "title": "Next authorization or information step",
+      "value": "The project team lead needs to confirm that the required read-only record exports will arrive by day three and verify that staff availability fully aligns with the planned 48-hour schedule. Meanwhile, the sponsor must review the complete proposal and formally authorize the recommendation to greenlight the next steps."
+    }
+  ],
+  "sources": [
+    {
+      "id": "W02-S01",
+      "title": "Request for a bounded review",
+      "locator": "Week 2 decision packet · W02-S01"
+    },
+    {
+      "id": "W02-S02",
+      "title": "Evidence-retrieval workload",
+      "locator": "Week 2 decision packet · W02-S02"
+    },
+    {
+      "id": "W02-S03",
+      "title": "Proposed scope and current workflow",
+      "locator": "Week 2 decision packet · W02-S03"
+    },
+    {
+      "id": "W02-S04",
+      "title": "Capacity, access and operating limits",
+      "locator": "Week 2 decision packet · W02-S04"
+    },
+    {
+      "id": "W02-S05",
+      "title": "Estimate and success-measure sheet",
+      "locator": "Week 2 decision packet · W02-S05"
+    }
+  ],
+  "attachments": [
+    {
+      "id": "repository-check",
+      "filename": "Week02_Repository_Check.png",
+      "kind": "supporting-evidence",
+      "caption": "Required Week 2 repository screenshot; supply the actual file separately. This reference does not verify an upload.",
+      "sourceIds": []
+    }
+  ],
+  "relatedReportIds": []
+}
