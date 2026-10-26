@@ -1,0 +1,205 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Current Process" id="w05-process">
+    <mxGraphModel dx="822" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=24;fontStyle=1;fontColor=#1A1A1A;align=left;labelBackgroundColor=none;labelBorderColor=default;" value="CIT 140 · Week 5 | Current Appointment Process" vertex="1">
+          <mxGeometry height="40" width="1080" x="40" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="instructions" parent="1" style="text;html=1;fontSize=13;align=left;whiteSpace=wrap;labelBackgroundColor=none;fontColor=#1A1A1A;" value="This diagram tracks the complete visitor appointment flow from the initial request through scheduling to intake handoff and exception handling." vertex="1">
+          <mxGeometry height="45" width="1080" x="40" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="visitor" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;fontSize=15;fontStyle=1;labelBackgroundColor=none;fontColor=#1A1A1A;" value="Visitor" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-1" parent="visitor" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=9;" value="Visitor requests an appointment" vertex="1">
+          <mxGeometry height="45" width="90" x="150" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-46" edge="1" parent="visitor" source="pZMpKQ5l5E3zLoUqpnSb-17" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="44.44999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-17" parent="visitor" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=9;" value="Visitor arrives at clinic with their booking confirmation.(W05-S03)" vertex="1">
+          <mxGeometry height="56.25" width="120" x="660" y="16.25" as="geometry" />
+        </mxCell>
+        <mxCell id="scheduling" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;fontSize=15;fontStyle=1;labelBackgroundColor=none;fontColor=#1A1A1A;" value="Scheduling" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-26" edge="1" parent="scheduling" source="pZMpKQ5l5E3zLoUqpnSb-2" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-2" parent="scheduling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=8;" value="&lt;span style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;Record requested slot &amp;amp; support preferences&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;font-size: 12px; font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;.(W05-S01)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="32.5" width="120" x="150" y="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-29" edge="1" parent="scheduling" source="pZMpKQ5l5E3zLoUqpnSb-3" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-4" value="NO">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="20" />
+              <mxPoint x="390" y="20" />
+              <mxPoint x="390" y="21.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-30" edge="1" parent="scheduling" source="pZMpKQ5l5E3zLoUqpnSb-3" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-14" value="YES">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="66.25" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-3" parent="scheduling" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=9;" value="Are the details complete?" vertex="1">
+          <mxGeometry height="45" width="80" x="290" y="16.25" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-39" edge="1" parent="scheduling" source="pZMpKQ5l5E3zLoUqpnSb-4" style="edgeStyle=none;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" value="Clarification loop">
+          <mxGeometry relative="1" x="-0.0667" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="-20" />
+              <mxPoint x="220" y="-20" />
+            </Array>
+            <mxPoint x="220" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-4" parent="scheduling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=9;" value="Return request for clarification.(W05-S01)" vertex="1">
+          <mxGeometry height="22.5" width="100" x="400" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-14" parent="scheduling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=8;" value="&lt;span&gt;Mark slot as Held &amp;amp; Send Booking Confirmation to Visitor (W05-S01)&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="32.5" width="100" x="400" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="clinical" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;fontSize=15;fontStyle=1;labelBackgroundColor=none;fontColor=#1A1A1A;" value="Clinical&lt;br&gt;Operations" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-55" edge="1" parent="clinical" source="pZMpKQ5l5E3zLoUqpnSb-9" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-9" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=10;" value="&lt;span&gt;Receive scheduling request &amp;amp; perform readiness check.(W05-S02)&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="150" y="23.13" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-10" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=9;" value="Mark status as Ready.(W05-S02)" vertex="1">
+          <mxGeometry height="32.5" width="110" x="550" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-43" edge="1" parent="clinical" source="pZMpKQ5l5E3zLoUqpnSb-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-13" value="NO">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-11" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=10;" value="&lt;span style=&quot;font-size: 9px;&quot;&gt;Retain Held status &amp;amp; Review capacity.(W05-S02)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="32.5" width="110" x="550" y="5.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-13" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;" value="&lt;span&gt;Request Scheduling to arrange another slot.(W05-S02)&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="750" y="23.130000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-34" edge="1" parent="clinical" source="pZMpKQ5l5E3zLoUqpnSb-15" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-11" value="NO">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="14.060000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-35" edge="1" parent="clinical" source="pZMpKQ5l5E3zLoUqpnSb-15" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-10" value="YES">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="77.19" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-15" parent="clinical" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=9;" value="Is the room &amp;amp; Clinician available?" vertex="1">
+          <mxGeometry height="56.25" width="110" x="420" y="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="intake" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;fontSize=15;fontStyle=1;labelBackgroundColor=none;fontColor=#1A1A1A;" value="Intake" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-49" edge="1" parent="intake" source="pZMpKQ5l5E3zLoUqpnSb-18" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-18" parent="intake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;" value="&lt;span&gt;Locate appointment &amp;amp; check queue status&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;.(W05-S03)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="410" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-19" parent="intake" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=11;" value="Status in Queue?" vertex="1">
+          <mxGeometry height="62.5" width="90" x="560" y="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-21" parent="intake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=12;" value="Open Exception Review and Contact Scheduling &amp;amp; Clinical Ops. (W05-504)" vertex="1">
+          <mxGeometry height="62.5" width="130" x="740" y="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-57" edge="1" parent="intake" source="pZMpKQ5l5E3zLoUqpnSb-19" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-21" value="HELD">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="50" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="handoff" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;fontSize=15;fontStyle=1;labelBackgroundColor=none;fontColor=#1A1A1A;" value="Next staff team" vertex="1">
+          <mxGeometry height="102.5" width="1080" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-22" parent="handoff" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=11;" value="END:Incident Unresolved (W05-504)" vertex="1">
+          <mxGeometry height="45" width="130" x="940" y="31.25" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-23" parent="handoff" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;" value="END: Visitor handoff" vertex="1">
+          <mxGeometry height="45" width="130" x="260" y="28.75" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-59" edge="1" parent="handoff" source="pZMpKQ5l5E3zLoUqpnSb-20" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-20" parent="handoff" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD9D5;strokeColor=#D0CEE2;labelBackgroundColor=none;fontColor=#1A1A1A;fontSize=11;" value="&lt;span&gt;Confirm support arrangements &amp;amp; pass visitor forward.(W05-S03)&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="540" y="28.75" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-25" edge="1" parent="1" source="pZMpKQ5l5E3zLoUqpnSb-1" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.371;entryY=-0.057;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-41" edge="1" parent="1" source="pZMpKQ5l5E3zLoUqpnSb-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=0;entryX=0.692;entryY=-0.047;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-9">
+          <mxGeometry relative="1" x="-0.7941" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="330" />
+              <mxPoint x="280" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-45" edge="1" parent="1" source="pZMpKQ5l5E3zLoUqpnSb-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;align=center;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-17" value="Exception loop&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.2221" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="855" y="184.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-58" edge="1" parent="1" source="pZMpKQ5l5E3zLoUqpnSb-19" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-20" value="READY">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-54" edge="1" parent="1" source="pZMpKQ5l5E3zLoUqpnSb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pZMpKQ5l5E3zLoUqpnSb-61" edge="1" parent="1" source="pZMpKQ5l5E3zLoUqpnSb-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.666;entryY=0.07;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#09555B;fontSize=12;fontColor=default;defaultLabelBackgroundColor=page;startSize=8;endSize=8;labelBackgroundColor=none;" target="pZMpKQ5l5E3zLoUqpnSb-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="645" y="450" />
+              <mxPoint x="536.6" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Scope and Findings" id="w05-findings">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=24;fontStyle=1;fontColor=#183c43;align=left;" value="Week 5 | Scope and Findings" vertex="1">
+          <mxGeometry height="40" width="1070" x="45" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="&lt;b&gt;1 · Process scope&lt;/b&gt;&lt;br&gt;Nzubechi Anyanwu. &lt;b&gt;Process Purpose:&lt;/b&gt; Map the appointment handling workflow from initial visitor request to intake readiness and exception handling. &lt;b&gt;Start:&lt;/b&gt; Visitor submits an appointment request. &lt;b&gt;End:&lt;/b&gt; Successful Visitor Handoff for normal path or Unresolved Incident / Gap for exception path. &lt;b&gt;Included Roles:&lt;/b&gt; Visitor, Scheduling, Clinical Operations, Intake, Next Staff Team. &lt;b&gt;Outside Scope:&lt;/b&gt; Long-term patient record archival, billing and payment processing, and external provider referrals." vertex="1">
+          <mxGeometry height="110" width="1070" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="walkthrough" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;fillColor=#fff7ee;strokeColor=#95694b;" value="&lt;b&gt;2 · Check the two paths&lt;/b&gt;&lt;br&gt;Normal Path: Steps 1 to 5 show a visitor asking for a slot, staff checking the form, holding the time, Clinical Operations approving it, changing the status to Ready, and handing off the visitor. Issue Path: Source W05-S04 shows a visitor arriving while their status is still Held because Clinical Operations did not make a final decision. What We Cannot Prove: The records do not show if Clinical Operations forgot to approve it or if the computer system failed." vertex="1">
+          <mxGeometry height="140" width="1070" x="45" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="sources" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="&lt;b&gt;3 · Evidence and model review&lt;/b&gt;&lt;br&gt;W05-501 supports the request step. W05-S02 supports Clinical Operations checking the slot. W05-S03 supports changing the status to Ready. W05-S04 supports front desk review for Held status. Corrections: Added a loop to fix bad form data and a loop to fix schedule conflicts. Remaining Question: We do not know who was responsible for the missing decision, which requires checking system logs or asking the manager." vertex="1">
+          <mxGeometry height="140" width="1070" x="45" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="reflection" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;fillColor=#fff7ee;strokeColor=#95694b;" value="&lt;b&gt;4 · Learning reflection (reuse your Discord paragraph)&lt;/b&gt;&lt;br&gt;Mapping this process made it clearer that a booked appointment is not automatically ready for a visitor. However, source W05-S04 leaves responsibility unclear because Clinical Operations does not decide visitor readiness before arrival, and the trace fails to show who must complete the decision before intake. The front desk just gets a visitor whose status is marked as &quot;Held&quot;. Unlike Week 4 which only listed the required steps, Week 5 uses process modeling to map out the complete workflow from start to finish." vertex="1">
+          <mxGeometry height="140" width="1070" x="45" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="evidence" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="&lt;b&gt;5 · Portfolio evidence&lt;/b&gt;&lt;br&gt;[Editable model filename and Week05/Evidence/Week05_Discord_Post.png or .jpg. If Discord is unavailable, identify the equivalent reflection used here.]&lt;br&gt;Save the .drawio file; export both pages as one PDF; check readability; commit and push." vertex="1">
+          <mxGeometry height="105" width="1070" x="45" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
