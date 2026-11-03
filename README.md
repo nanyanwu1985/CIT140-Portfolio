@@ -3,7 +3,7 @@
 ## Week 8 client review
 - [Review PDF](Week08/Artifact/Anyanwu_Nzubechi_CIT140_Week08_Portfolio.pdf)
 - [Editable packet](Week08/Artifact/Anyanwu_Nzubechi_CIT140_Week08_Portfolio.docx)
-- [Week 8 receipt](Week08/Receipt/Week08_Mission_Receipt.pdf)
+- [Week 8 receipt]( Week08/Reciept/Week08_Mission_Receipt.pdf)
 
 ## Original weekly evidence
 - Week 1: Problem Brief — [Week01/artifact/CIT -140 Week 1 Problem Brief.pdf](Week01/Artifact/CIT%20-140%20Week%201%20Problem%20Brief.pdf)
