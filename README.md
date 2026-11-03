@@ -6,7 +6,7 @@
 - [Week 8 receipt]( Week08/Reciept/Week08_Mission_Receipt.pdf)
 
 ## Original weekly evidence
-- Week 1: Problem Brief — [Week01/Artifact/CIT -140 Week 1 Problem Brief.pdf](Week01/Artifact/CIT%20-140%20Week%201%20Problem%20Brief.pdf)
+- Week 1: Problem Brief — [Week01/artifact/CIT -140 Week 1 Problem Brief.pdf](Week01/artifact/CIT%20-140%20Week%201%20Problem%20Brief.pdf)
 - Week 2: Business Case Recommendation — [Week02/CIT140 Week 02 — Business Case Recommendation.pdf](Week02/Artifact/CIT140%20Week%2002%20%E2%80%94%20Business%20Case%20Recommendation.pdf)
 - Week 3: Stakeholder Map — [Week03/CIT140 Week 03 - Stakeholder Map.pdf ](Week03/Artifact/CIT140%20Week%2003%20-%20Stakeholder%20Map.pdf)
 
@@ -14,7 +14,7 @@
 
 - Week 5: As-Is Process Model — [Week05/Artifact/Anyanwu_Nzubechi_CIT140_Week05_As_Is_Process_Model.pdf](Week05/Artifact/Anyanwu_Nzubechi_CIT140_Week05_As_Is_Process_Model.pdf)
 - Week 6: Data-Flow Model — [Week06/Artifact/Anyanwu_Nzubechi_CIT140_Week06.pdf](Week06/Artifact/Anyanwu_Nzubechi_CIT140_Week06.pdf)
-- Week 7: Data-Quality Report — [Week07/Artifact/Anyanwu_Nzubechi_CIT140_Week07.pdf](Week07/Artifact/Anyanwu_Nzubechi_CIT140_Week07.pdf)
+- Week 7: Data-Quality Report — [Week07/artifact/Anyanwu_Nzubechi_CIT140_Week07.pdf](Week07/artifact/Anyanwu_Nzubechi_CIT140_Week07.pdf)
 
 ## Gaps or revisions
 * Unconfirmed formal acceptance for the Record Custodian and Authorizing Sponsor roles in Week 3.
