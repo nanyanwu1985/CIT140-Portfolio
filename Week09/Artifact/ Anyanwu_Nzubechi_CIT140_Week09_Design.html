@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 140 Week 9 Design Packet - Clockwork Archive of Orison Keep (PROPOSED)</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+            --success-color: #4ade80;
+            --warning-color: #fbbf24;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #0f172a;
+            color: var(--accent-color);
+        }
+        .editable {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px dashed var(--accent-color);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+        .step-box {
+            background-color: #0f172a;
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 0.35rem;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        .tag-must { background-color: #7f1d1d; color: #fecaca; }
+        .tag-status { background-color: #1e3a8a; color: #dbeafe; }
+        ol li, ul li {
+            margin-bottom: 0.4rem;
+        }
+        .btn-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .btn {
+            background-color: var(--accent-color);
+            color: #0f172a;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+        }
+        .btn:hover {
+            background-color: #7dd3fc;
+        }
+        :focus-visible {
+            outline: 3px solid #fbbf24;
+            outline-offset: 2px;
+        }
+        @media print {
+            body { background-color: #fff; color: #000; padding: 0.5rem; }
+            .section-card { background-color: #fff; border: 1px solid #ccc; color: #000; page-break-inside: avoid; }
+            h1, h2, h3, th { color: #000; }
+            th { background-color: #f1f5f9; }
+            .btn-container { display: none; }
+            .editable { border: 1px solid #ccc; background-color: #fff; }
+            .step-box { background-color: #f8fafc; border-left: 4px solid #000; }
+            .tag, .tag-must, .tag-status { background-color: #f1f5f9; color: #000; border: 1px solid #000; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>CIT 140 Week 9: Proposed Design Packet PROPOSED</h1>
+        <p><strong>Case:</strong> Clockwork Archive of Orison Keep</p>
+        <div class="meta-info">
+            <span><strong>Role:</strong> Systems Analyst Proposal Only</span>
+            <span><strong>Client:</strong> Iona Venn, Archive Service Lead</span>
+            <span><strong>Authorizing Body:</strong> Archive Council Approval Pending</span>
+            <span><strong>Status:</strong> Proposed Future State — Not Yet Implemented</span>
+        </div>
+    </header>
+
+    <!-- SECTION 1: PROBLEM, BOUNDARY, AND APPROACH COMPARISON -->
+    <section class="section-card">
+        <h2>01. Problem, Boundary &amp; Approach Comparison R1</h2>
+
+        <h3>Problem Statement</h3>
+        <p class="editable" contenteditable="true">
+            An archive request can currently be handed to a runner before staff confirm its destination and reference code. Clerks copy paper slips into a shared spreadsheet register identified by row number with no required-field checks, and status updates are entered as free text without consistent staff attribution or timestamps. As a result, staff spend time locating requests or asking for corrections after dispatch, with no supplied measured error rate or service-time baseline.
+        </p>
+
+        <h3>Design Boundary</h3>
+        <p class="editable" contenteditable="true">
+            This design covers receiving a request at the service desk through delivery to the correct destination keeper, or return to the requester for clarification. Retrieving archive contents, payments, and replacing archive machinery are outside this design.
+        </p>
+
+        <h3>Comparison of Approaches A and B W09-S04</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Evaluation Dimension</th>
+                    <th>Approach A: Improve Existing Register</th>
+                    <th>Approach B: Small Request Interface Chosen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Fit with Requirements AR-01 to AR-06</strong></td>
+                    <td>Retains the spreadsheet register and paper slip while adding explicit fields, staff checks, status rules, and clearer delivery acknowledgment; relies on repeated manual checks and staff coordination.</td>
+                    <td>Uses a guided form, review/status view, and correction state backed by a shared request record to support guided entry, role-scoped visibility, status/clarification history, and keyboard/plain-text clarity.</td>
+                </tr>
+                <tr>
+                    <td><strong>Practical Limits</strong></td>
+                    <td>Service continues during transition and staff already know the spreadsheet and paper slip, but manual checks and coordination remain ongoing requirements.</td>
+                    <td>Service must continue during transition, the existing directory remains the reference source, contact details stay at the desk, and keyboard access/non-color clarity are required; implementation, training, and support are unapproved, and cost, time savings, vendor contracts, or automatic directory integration are not supplied.</td>
+                </tr>
+                <tr>
+                    <td><strong>One Key Tradeoff</strong></td>
+                    <td>Familiar tools avoid unapproved software and training hurdles, but repeated manual checks leave more room for human oversight before handoff.</td>
+                    <td>Structured guidance, role scoping, and recorded history are clearer in the interface, but the approach requires unapproved implementation, training, and support before use.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Chosen Approach &amp; Rationale</h3>
+        <p class="editable" contenteditable="true">
+            <strong>Selected Approach:</strong> Approach B Small Request Interface, represented as a <strong>Proposed</strong> design model/sequence rather than a working or approved system. It makes pre-dispatch checks, role-limited visibility, status transitions, and preserved clarification history explicit while keeping existing directory and desk-continuity limits clear.
+        </p>
+    </section>
+
+    <!-- SECTION 2: PROPOSED SYSTEM DESIGN -->
+    <section class="section-card">
+        <h2>02. Proposed System Design &amp; Route Description R2</h2>
+        <p><strong>Design State:</strong> PROPOSED for review by Iona Venn and the Archive Council; not deployed or self-approved.</p>
+
+        <h3>Short Route Description</h3>
+        <p class="editable" contenteditable="true">
+            <strong>Normal Route:</strong> A requester submits a slip at the service desk, the desk clerk records the request ID and six required fields and checks the directory CK-042 &rarr; East Records; CK-087 &rarr; West Records, sets status to <strong>Ready</strong>, and hands off a scoped delivery view without requester contact to the runner <strong>In Delivery</strong>, who delivers to the destination keeper for receipt acknowledgment <strong>Received</strong>.<br>
+            <strong>Clarification &amp; Re-Entry Route:</strong> If required fields are missing or the reference/destination fails directory validation, dispatch is blocked, status becomes <strong>Awaiting Clarification</strong>, the original issue is logged, the requester supplies corrections, the clerk appends the correction without erasing prior entries, and the request returns to the desk directory check before becoming <strong>Ready</strong>.
+        </p>
+
+        <div class="step-box">
+            <h3>Step 1: Desk Intake &amp; Pre-Dispatch Directory Check</h3>
+            <p><strong>Acting Role:</strong> Desk Clerk</p>
+            <p><strong>Information In:</strong> Request slip details requester, contact, reference, destination, summary and supplied directory CK-042 &rarr; East Records; CK-087 &rarr; West Records.</p>
+            <p><strong>Information Out / Recorded:</strong> Request ID plus all six fields ID, requester, contact, reference, destination, summary, validation result, and actor/timestamp log.</p>
+            <p><strong>Decision &amp; Next Step:</strong></p>
+            <ul>
+                <li><strong>Complete &amp; Valid Match:</strong> Set status to <span class="tag tag-status">Ready</span> with clerk and timestamp &rarr; hand off to Runner queue.</li>
+                <li><strong>Missing Field or Unknown/Conflicting Reference:</strong> Block dispatch, set status to <span class="tag tag-status">Awaiting Clarification</span> with clerk and timestamp, record original issue &rarr; route to Step 2.</li>
+            </ul>
+        </div>
+
+        <div class="step-box">
+            <h3>Step 2: Clarification &amp; Append-Only Correction Rejoin</h3>
+            <p><strong>Acting Roles:</strong> Desk Clerk primary, Requester supplies correction</p>
+            <p><strong>Information In:</strong> Clarification notice and requester's corrected details e.g., reference CK-042 and destination East Records.</p>
+            <p><strong>Information Out / Recorded:</strong> Appended correction entry with actor and timestamp while preserving the original issue and prior values.</p>
+            <p><strong>Decision &amp; Next Step / Outcome:</strong> Re-enter Step 1 validation check. Once valid, status changes to <span class="tag tag-status">Ready</span> and rejoins the normal dispatch route to the Runner.</p>
+        </div>
+
+        <div class="step-box">
+            <h3>Step 3: Runner Delivery Handoff</h3>
+            <p><strong>Acting Role:</strong> Runner</p>
+            <p><strong>Information In / Visible:</strong> Request ID, reference, destination, and delivery status <em>requester contact details excluded</em>.</p>
+            <p><strong>Information Out / Recorded:</strong> Status updated to <span class="tag tag-status">In Delivery</span> with runner role/ID and timestamp; next responsible role and destination identified.</p>
+            <p><strong>Decision &amp; Next Step:</strong> Transport request to the named destination and hand off to Destination Keeper.</p>
+        </div>
+
+        <div class="step-box">
+            <h3>Step 4: Destination Keeper Receipt &amp; Acknowledgment</h3>
+            <p><strong>Acting Role:</strong> Destination Keeper</p>
+            <p><strong>Information In / Visible:</strong> Request ID, reference, destination, and delivery status.</p>
+            <p><strong>Information Out / Recorded:</strong> Receipt acknowledgment with keeper role/ID and timestamp; status set to <span class="tag tag-status">Received</span> or routing/information issue flagged back to desk clerk.</p>
+            <p><strong>Outcome:</strong> Acknowledged delivery completes the normal route within the design boundary.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: REQUIREMENTS TRACEABILITY, DATA QUALITY & ACCESS -->
+    <section class="section-card">
+        <h2>03. Requirements Traceability, Data Quality &amp; Access R3</h2>
+
+        <h3>Data Quality &amp; Role Access Summary</h3>
+        <p class="editable" contenteditable="true">
+            <strong>Data Quality:</strong> Every request requires an ID and all six fields before dispatch, and the desk clerk checks the reference against the directory CK-042 &rarr; East Records; CK-087 &rarr; West Records before setting status to <strong>Ready</strong>. Missing or conflicting information enters <strong>Awaiting Clarification</strong>, and corrections are appended while preserving original entries and recording who changed status and when.<br>
+            <strong>Role Access &amp; Authority:</strong> Requesters supply requests/corrections and receive status/next actions; desk clerks record requests, run checks, and handle clarification; runners see request ID, reference, destination, and delivery status without requester contact details; destination keepers acknowledge receipt or flag routing/information problems; Iona Venn reviews the proposal and unresolved questions; the Archive Council authorizes any operational change; the service team implements approved changes; and the systems analyst proposes and explains without deploying or self-approving. This is an unapproved proposal with no measured speed or error-rate claims.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Req ID</th>
+                    <th>Source</th>
+                    <th>Design Element</th>
+                    <th>Why Chosen &amp; What Changes from Today</th>
+                    <th>Proposed Check</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="tag tag-must">AR-01</span></td>
+                    <td>Desk clerk W09-S02/S01</td>
+                    <td>Request Record &amp; Step 1 Intake</td>
+                    <td>Replaces spreadsheet row numbers with a request ID and six explicit fields so requests remain identifiable across handoffs.</td>
+                    <td>N01 Q-241 has all six fields; staff can use the ID to find the same request after a handoff.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag tag-must">AR-02</span></td>
+                    <td>Desk clerk W09-S02/S01</td>
+                    <td>Pre-Dispatch Check &amp; Step 2 Clarification</td>
+                    <td>Stops unverified slips from reaching runners before required fields and directory mapping are checked; routes gaps to clarification and appends corrections.</td>
+                    <td>E01 Q-242 cannot be marked Ready while destination is blank and reference is CK-099; shows next action and how correction is recorded.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag tag-must">AR-03</span></td>
+                    <td>Runner and destination keeper W09-S02/S03</td>
+                    <td>Steps 3–4 Handoffs &amp; Keeper Acknowledgment</td>
+                    <td>Replaces unconfirmed outgoing-tray handoffs with explicit next responsible role, destination, and keeper receipt acknowledgment.</td>
+                    <td>Reviewer can follow N01 from desk to runner to East Records and locate the keeper's acknowledgment.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag tag-must">AR-04</span></td>
+                    <td>Iona W09-S02/S01</td>
+                    <td>Status Labels, Actor/Time Log &amp; History</td>
+                    <td>Replaces inconsistent free-text status notes with clear statuses Awaiting Clarification, Ready, In Delivery, Received, actor/time logging, and preserved clarification history.</td>
+                    <td>Distinguishes Awaiting Clarification, Ready, In Delivery, and Received; E01 keeps original issue and corrected details.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag tag-must">AR-05</span></td>
+                    <td>Iona and desk clerk W09-S02/S03</td>
+                    <td>Role-Scoped Views Desk vs. Runner</td>
+                    <td>Keeps requester contact details limited to the desk clerk role instead of exposing them on every slip handed to a runner.</td>
+                    <td>Labels information visible to each role; runner view/slip excludes requester contact such as T-14 or D-08.</td>
+                </tr>
+                <tr>
+                    <td><span class="tag tag-must">AR-06</span></td>
+                    <td>Desk and runner representatives W09-S02/S04</td>
+                    <td>Plain Labels, Error Text &amp; Keyboard Notes</td>
+                    <td>Uses plain labels, written status/error text, and keyboard tab/focus order notes so meaning does not depend on color alone.</td>
+                    <td>Reviewer can read route and error without relying on color; notes specify control order and intended keyboard behavior.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SECTION 4: WALKTHROUGHS, GAPS, RISKS & NEXT TEST -->
+    <section class="section-card">
+        <h2>04. Walkthroughs, Revisions, Risks &amp; Next Test R4</h2>
+
+        <h3>Walkthrough N01: Complete Request Q-241</h3>
+        <p><strong>Input:</strong> Q-241 | Requester: Tessa Rowe | Contact: desk mailbox T-14 | Reference: CK-042 | Destination: East Records | Summary: request a copy of the gate maintenance record.</p>
+        <ol>
+            <li><strong>Step 1 Desk Clerk:</strong> Records Q-241 with all six fields and checks directory: CK-042 maps to East Records, matching the stated destination.</li>
+            <li><strong>Step 1 Decision &rarr; Ready:</strong> Validation passes; status is set to <span class="tag tag-status">Ready</span> with clerk ID and timestamp.</li>
+            <li><strong>Step 3 Runner:</strong> Views Q-241, CK-042, East Records, and delivery status <em>desk mailbox T-14 excluded</em>; status updates to <span class="tag tag-status">In Delivery</span> with runner ID and timestamp.</li>
+            <li><strong>Step 4 Destination Keeper:</strong> East Records keeper receives request and records acknowledgment; status updates to <span class="tag tag-status">Received</span> with keeper ID and timestamp.</li>
+        </ol>
+        <p><strong>Expected Outcome &amp; Gap Check:</strong> Reaches East Records with full status/actor/time trace and no contact exposure to the runner. No missing owner or broken return path found on N01; no revision required for the normal path after checking every handoff and status change.</p>
+
+        <h3>Walkthrough E01: Incomplete Request Before &amp; After Correction Q-242</h3>
+        <p><strong>Initial Input:</strong> Q-242 | Requester: Daro Lin | Contact: desk mailbox D-08 | Reference: CK-099 | Destination: blank | Summary: request a copy of the gate maintenance record. <strong>Correction Supplied:</strong> Reference CK-042 and destination East Records.</p>
+        <ol>
+            <li><strong>Before Correction — Step 1 Intake &amp; Check:</strong> Desk clerk enters Q-242; directory check finds no entry for CK-099 and destination is blank.</li>
+            <li><strong>Before Correction — Blocked &amp; Clarification:</strong> Dispatch is blocked; status becomes <span class="tag tag-status">Awaiting Clarification</span> with clerk ID and timestamp, recording original issue unknown reference CK-099 and blank destination and routing to Daro Lin via desk mailbox D-08.</li>
+            <li><strong>After Correction — Append History:</strong> Daro Lin supplies reference CK-042 and destination East Records; desk clerk appends the correction to Q-242 while keeping the original CK-099 and blank-destination record intact.</li>
+            <li><strong>After Correction — Re-Check &amp; Dispatch:</strong> Desk clerk re-runs directory check CK-042 &rarr; East Records, updates status to <span class="tag tag-status">Ready</span> with actor and timestamp, and dispatches through Runner <span class="tag tag-status">In Delivery</span> to East Records Keeper <span class="tag tag-status">Received</span>.</li>
+        </ol>
+        <p><strong>Expected Outcome:</strong> Q-242 cannot be marked Ready while incomplete/unmatched, and the final record shows both the initial issue and the appended correction.</p>
+
+        <h3>Gap Found, Revision, Assumption/Risk &amp; Next Test</h3>
+        <p class="editable" contenteditable="true">
+            <strong>Gap Found &amp; Revision:</strong> An initial draft could allow a clerk to overwrite CK-099 in place or skip re-checking the directory after receiving a correction. Revised Step 2 so corrections are appended without erasing the original issue and explicitly return to the Step 1 directory check before setting status to Ready.<br>
+            <strong>Assumption / Risk:</strong> Assumes staff follow the workflow and record accurate actors/timestamps during transition; risk remains that unapproved implementation/training delays or manual paper handoffs during transition could cause inconsistent logging.<br>
+            <strong>Next Test Needed:</strong> Conduct a structured walkthrough/tabletop test with Iona Venn and desk, runner, and keeper representatives using N01, E01, and a conflicting reference/destination case to verify status history, role views, and keyboard/plain-text clarity before any Archive Council decision.
+        </p>
+    </section>
+
+    <!-- SECTION 5: CLIENT BRIEFING -->
+    <section class="section-card">
+        <h2>05. Client Briefing R5</h2>
+        <p class="editable" contenteditable="true">
+            <strong>Client Statement:</strong> "I propose Approach B Small Request Interface because requirements AR-01 through AR-06 call for complete request records, pre-dispatch directory checks, clear handoffs and status/clarification history, desk-only contact visibility, and accessible plain-text/keyboard support. In the walkthrough, N01 moved from desk to runner to East Records with keeper acknowledgment and no runner contact exposure, while E01 was held in Awaiting Clarification until CK-042 and East Records were appended without erasing the original issue. Before implementation, the service team still needs to check Archive Council approval, training/support readiness, and keyboard focus order while keeping service running."
+        </p>
+    </section>
+</div>
+
+<div class="btn-container">
+    <button class="btn" type="button" onclick="saveHTML()">Save Editable HTML</button>
+</div>
+
+<script>
+    function saveHTML() {
+        const htmlContent = "<!DOCTYPE html>
+" + document.documentElement.outerHTML;
+        const blob = new Blob([htmlContent], { type: "text/html" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "CIT140_Week09_Design_Packet.html";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+</script>
+</body>
+</html>
